@@ -17,7 +17,6 @@ const ProductDetails = ({ product, products }) => {
 
   const handleBuyNow = () => {
     onAdd(product, qty);
-
     setShowCart(true);
   };
 
@@ -68,9 +67,7 @@ const ProductDetails = ({ product, products }) => {
               <span className="minus" onClick={decQty}>
                 <AiOutlineMinus />
               </span>
-              <span className="num" onClick={() => console.log(`${qty}`)}>
-                {qty}
-              </span>
+              <span className="num">{qty}</span>
               <span className="plus" onClick={incQty}>
                 <AiOutlinePlus />
               </span>
